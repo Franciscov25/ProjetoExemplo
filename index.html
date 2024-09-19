@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 1</title>
-    <!--Chamando script interno - cabeçalho -->
+    <!--Chamando script interno - cabeçalho 
     <script>
         alert("Olá mundo! - cabeçalho")
     </script>
+    -->
+    <!--defer faz ler o arquivo todo, sem ele só le até o script-->
+    <!-- <script src="./app.js" defer></script> -->
 </head>
 <body>
     
@@ -16,9 +19,12 @@
 
 
 
-    <script>
+    <!-- <script>
         // Chamando o script no corpo da página
         alert("Olá mundo - corpo")
-    </script>
+    </script> -->
+
+    <!--dessa forma ele le todo o html, e depois executa. boa prática.-->
+    <script src="./app.js"></script>
 </body>
 </html>
